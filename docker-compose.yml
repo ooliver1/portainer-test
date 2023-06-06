@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  test:
+    image: alpine
+    entrypoint:
+      [
+        "/bin/sh",
+        "-c",
+        "echo",
+        "$HOSTNAME",
+        "&&",
+        "sleep",
+        "1000"
+      ]
